@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
 import Header from './component/header';
@@ -22,7 +21,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className="font-nunito h-screen bg-veryLightGrayLM dark:bg-veryDarkBlueDM">
       <Header onSwitch = {handleThemeSwitch} />
       <Home />
     </div>
