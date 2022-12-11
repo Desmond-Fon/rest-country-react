@@ -1,7 +1,7 @@
 function DisplayCountry({countries}) {
   return (<>
     {countries.map((country) =>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center" key={country.flags.svg}>
         <div className="w-4/5 bg-whiteLMDM mb-9 rounded-[5px] shadow-md text-left dark:text-whiteLMDM dark:bg-darkBlue hello">
         
         <div className='w-full'>

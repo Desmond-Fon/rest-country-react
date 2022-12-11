@@ -2,7 +2,7 @@ function DisplaySearch ({searchCountry}) {
     return ( <>
       <div>
         {searchCountry.map((names) =>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center" key={names.flags.svg}>
         <div className="w-4/5 bg-whiteLMDM mb-9 rounded-[5px] shadow-md text-left dark:text-whiteLMDM dark:bg-darkBlue hello">
         
         <div className='w-full'>
