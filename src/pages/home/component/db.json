@@ -1,221 +1,189 @@
 [
-    {
-        "name": {
-            "common": "Peru",
-            "official": "Republic of Peru",
-            "nativeName": {
-                "aym": {
-                    "official": "Piruw Suyu",
-                    "common": "Piruw"
-                },
-                "que": {
-                    "official": "Piruw Ripuwlika",
-                    "common": "Piruw"
-                },
-                "spa": {
-                    "official": "República del Perú",
-                    "common": "Perú"
-                }
-            }
-        },
-        "tld": [
-            ".pe"
-        ],
-        "cca2": "PE",
-        "ccn3": "604",
-        "cca3": "PER",
-        "cioc": "PER",
-        "independent": true,
-        "status": "officially-assigned",
-        "unMember": true,
-        "currencies": {
-            "PEN": {
-                "name": "Peruvian sol",
-                "symbol": "S/ "
-            }
-        },
-        "idd": {
-            "root": "+5",
-            "suffixes": [
-                "1"
-            ]
-        },
-        "capital": [
-            "Lima"
-        ],
-        "altSpellings": [
-            "PE",
-            "Republic of Peru",
-            "República del Perú"
-        ],
-        "region": "Americas",
-        "subregion": "South America",
-        "languages": {
-            "aym": "Aymara",
-            "que": "Quechua",
-            "spa": "Spanish"
-        },
-        "translations": {
-            "ara": {
-                "official": "جمهورية بيرو",
-                "common": "بيرو"
-            },
-            "bre": {
-                "official": "Republik Perou",
-                "common": "Perou"
-            },
-            "ces": {
-                "official": "Peruánská republika",
-                "common": "Peru"
-            },
-            "cym": {
-                "official": "Republic of Peru",
-                "common": "Peru"
-            },
-            "deu": {
-                "official": "Republik Peru",
-                "common": "Peru"
-            },
-            "est": {
-                "official": "Peruu Vabariik",
-                "common": "Peruu"
-            },
-            "fin": {
-                "official": "Perun tasavalta",
-                "common": "Peru"
-            },
-            "fra": {
-                "official": "République du Pérou",
-                "common": "Pérou"
-            },
-            "hrv": {
-                "official": "Republika Peru",
-                "common": "Peru"
-            },
-            "hun": {
-                "official": "Perui Köztársaság",
-                "common": "Peru"
-            },
-            "ita": {
-                "official": "Repubblica del Perù",
-                "common": "Perù"
-            },
-            "jpn": {
-                "official": "ペルー共和国",
-                "common": "ペルー"
-            },
-            "kor": {
-                "official": "페루 공화국",
-                "common": "페루"
-            },
-            "nld": {
-                "official": "Republiek Peru",
-                "common": "Peru"
-            },
-            "per": {
-                "official": "جمهوری پرو",
-                "common": "پرو"
-            },
-            "pol": {
-                "official": "Republika Peru",
-                "common": "Peru"
-            },
-            "por": {
-                "official": "República do Peru",
-                "common": "Perú"
-            },
-            "rus": {
-                "official": "Республика Перу",
-                "common": "Перу"
-            },
-            "slk": {
-                "official": "Peruánska republika",
-                "common": "Peru"
-            },
-            "spa": {
-                "official": "República de Perú",
-                "common": "Perú"
-            },
-            "swe": {
-                "official": "Republiken Peru",
-                "common": "Peru"
-            },
-            "tur": {
-                "official": "Peru Cumhuriyeti",
-                "common": "Peru"
-            },
-            "urd": {
-                "official": "جمہوریہ پیرو",
-                "common": "پیرو"
-            },
-            "zho": {
-                "official": "秘鲁共和国",
-                "common": "秘鲁"
-            }
-        },
-        "latlng": [
-            -10.0,
-            -76.0
-        ],
-        "landlocked": false,
-        "borders": [
-            "BOL",
-            "BRA",
-            "CHL",
-            "COL",
-            "ECU"
-        ],
-        "area": 1285216.0,
-        "demonyms": {
-            "eng": {
-                "f": "Peruvian",
-                "m": "Peruvian"
-            },
-            "fra": {
-                "f": "Péruvienne",
-                "m": "Péruvien"
-            }
-        },
-        "flag": "\uD83C\uDDF5\uD83C\uDDEA",
-        "maps": {
-            "googleMaps": "https://goo.gl/maps/uDWEUaXNcZTng1fP6",
-            "openStreetMaps": "https://www.openstreetmap.org/relation/288247"
-        },
-        "population": 32971846,
-        "gini": {
-            "2019": 41.5
-        },
-        "fifa": "PER",
-        "car": {
-            "signs": [
-                "PE"
-            ],
-            "side": "right"
-        },
-        "timezones": [
-            "UTC-05:00"
-        ],
-        "continents": [
-            "South America"
-        ],
-        "flags": {
-            "png": "https://flagcdn.com/w320/pe.png",
-            "svg": "https://flagcdn.com/pe.svg"
-        },
-        "coatOfArms": {
-            "png": "https://mainfacts.com/media/images/coats_of_arms/pe.png",
-            "svg": "https://mainfacts.com/media/images/coats_of_arms/pe.svg"
-        },
-        "startOfWeek": "monday",
-        "capitalInfo": {
-            "latlng": [
-                -12.05,
-                -77.05
-            ]
-        },
-        "postalCode": {
-            "format": "#####",
-            "regex": "^(\\d{5})$"
-        }
-    }
+  {
+    "name": "China",
+    "topLevelDomain": [".cn"],
+    "alpha2Code": "CN",
+    "alpha3Code": "CHN",
+    "callingCodes": ["86"],
+    "capital": "Beijing",
+    "altSpellings": [
+      "CN",
+      "Zhōngguó",
+      "Zhongguo",
+      "Zhonghua",
+      "People's Republic of China",
+      "中华人民共和国",
+      "Zhōnghuá Rénmín Gònghéguó"
+    ],
+    "subregion": "Eastern Asia",
+    "region": "Asia",
+    "population": 1402112000,
+    "latlng": [35.0, 105.0],
+    "demonym": "Chinese",
+    "area": 9640011.0,
+    "gini": 38.5,
+    "timezones": ["UTC+08:00"],
+    "borders": [
+      "AFG",
+      "BTN",
+      "MMR",
+      "HKG",
+      "IND",
+      "KAZ",
+      "PRK",
+      "KGZ",
+      "LAO",
+      "MAC",
+      "MNG",
+      "PAK",
+      "RUS",
+      "TJK",
+      "VNM",
+      "NPL"
+    ],
+    "nativeName": "中国",
+    "numericCode": "156",
+    "flags": {
+      "svg": "https://flagcdn.com/cn.svg",
+      "png": "https://flagcdn.com/w320/cn.png"
+    },
+    "currencies": [{ "code": "CNY", "name": "Chinese yuan", "symbol": "¥" }],
+    "languages": [
+      {
+        "iso639_1": "zh",
+        "iso639_2": "zho",
+        "name": "Chinese",
+        "nativeName": "中文 (Zhōngwén)"
+      }
+    ],
+    "translations": {
+      "br": "Sina",
+      "pt": "China",
+      "nl": "China",
+      "hr": "Kina",
+      "fa": "چین",
+      "de": "China",
+      "es": "China",
+      "fr": "Chine",
+      "ja": "中国",
+      "it": "Cina",
+      "hu": "Kína"
+    },
+    "flag": "https://flagcdn.com/cn.svg",
+    "cioc": "CHN",
+    "independent": true
+  },
+  {
+    "name": "Macao",
+    "topLevelDomain": [".mo"],
+    "alpha2Code": "MO",
+    "alpha3Code": "MAC",
+    "callingCodes": ["853"],
+    "altSpellings": [
+      "MO",
+      "澳门",
+      "Macao Special Administrative Region of the People's Republic of China",
+      "中華人民共和國澳門特別行政區",
+      "Região Administrativa Especial de Macau da República Popular da China"
+    ],
+    "subregion": "Eastern Asia",
+    "region": "Asia",
+    "population": 649342,
+    "latlng": [22.16666666, 113.55],
+    "demonym": "Chinese",
+    "area": 30.0,
+    "timezones": ["UTC+08:00"],
+    "borders": ["CHN"],
+    "nativeName": "澳門",
+    "numericCode": "446",
+    "flags": {
+      "svg": "https://flagcdn.com/mo.svg",
+      "png": "https://flagcdn.com/w320/mo.png"
+    },
+    "currencies": [{ "code": "MOP", "name": "Macanese pataca", "symbol": "P" }],
+    "languages": [
+      {
+        "iso639_1": "zh",
+        "iso639_2": "zho",
+        "name": "Chinese",
+        "nativeName": "中文 (Zhōngwén)"
+      },
+      {
+        "iso639_1": "pt",
+        "iso639_2": "por",
+        "name": "Portuguese",
+        "nativeName": "Português"
+      }
+    ],
+    "translations": {
+      "br": "Makao",
+      "pt": "Macau",
+      "nl": "Macao",
+      "hr": "Makao",
+      "fa": "مکائو",
+      "de": "Macao",
+      "es": "Macao",
+      "fr": "Macao",
+      "ja": "マカオ",
+      "it": "Macao",
+      "hu": "Makaó"
+    },
+    "flag": "https://flagcdn.com/mo.svg",
+    "independent": false
+  },
+  {
+    "name": "Taiwan",
+    "topLevelDomain": [".tw"],
+    "alpha2Code": "TW",
+    "alpha3Code": "TWN",
+    "callingCodes": ["886"],
+    "capital": "Taipei",
+    "altSpellings": [
+      "TW",
+      "Táiwān",
+      "Republic of China",
+      "中華民國",
+      "Zhōnghuá Mínguó"
+    ],
+    "subregion": "Eastern Asia",
+    "region": "Asia",
+    "population": 23503349,
+    "latlng": [23.5, 121.0],
+    "demonym": "Taiwanese",
+    "area": 36193.0,
+    "timezones": ["UTC+08:00"],
+    "nativeName": "臺灣",
+    "numericCode": "158",
+    "flags": {
+      "svg": "https://flagcdn.com/tw.svg",
+      "png": "https://flagcdn.com/w320/tw.png"
+    },
+    "currencies": [
+      { "code": "TWD", "name": "New Taiwan dollar", "symbol": "$" }
+    ],
+    "languages": [
+      {
+        "iso639_1": "zh",
+        "iso639_2": "zho",
+        "name": "Chinese",
+        "nativeName": "中文 (Zhōngwén)"
+      }
+    ],
+    "translations": {
+      "br": "Taiwan",
+      "pt": "Taiwan",
+      "nl": "Taiwan",
+      "hr": "Tajvan",
+      "fa": "تایوان",
+      "de": "Taiwan",
+      "es": "Taiwán",
+      "fr": "Taïwan",
+      "ja": "台湾（中華民国）",
+      "it": "Taiwan",
+      "hu": "Tajvan"
+    },
+    "flag": "https://flagcdn.com/tw.svg",
+    "cioc": "TPE",
+    "independent": true
+  }
 ]
