@@ -2,7 +2,7 @@
 
 const SearchBar = ({ name, setName }) => {
   return (
-    <div className="mb-10">
+    <div className="mb-10 md:w-1/2">
       <form>
         <input
           type="search"

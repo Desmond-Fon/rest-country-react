@@ -2,7 +2,7 @@
 
 const Header = ({onSwitch}) => {
     return ( <>
-    <header className="flex justify-between items-center px-4 py-8 bg-whiteLMDM shadow-lg dark:bg-darkBlue">
+    <header className="flex justify-between items-center px-4 md:px-20 py-8 bg-whiteLMDM shadow-lg dark:bg-darkBlue">
         <h1 className="font-bold text-veryDarkBlueLM dark:text-whiteLMDM">Where in the world?</h1>
         <div className="flex justify-between items-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-5" id="moon-icon" onClick = {onSwitch}>
