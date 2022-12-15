@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rest-country-react/static/css/main.b8e3235a.css",
+    "main.js": "/rest-country-react/static/js/main.5f132657.js",
+    "static/js/787.33bc2273.chunk.js": "/rest-country-react/static/js/787.33bc2273.chunk.js",
+    "index.html": "/rest-country-react/index.html",
+    "main.b8e3235a.css.map": "/rest-country-react/static/css/main.b8e3235a.css.map",
+    "main.5f132657.js.map": "/rest-country-react/static/js/main.5f132657.js.map",
+    "787.33bc2273.chunk.js.map": "/rest-country-react/static/js/787.33bc2273.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8e3235a.css",
+    "static/js/main.5f132657.js"
+  ]
+}
