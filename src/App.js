@@ -128,8 +128,8 @@ function App() {
             path="/details"
             element={<Details showDetails={showDetails} details={details} />}
           />
-        </Routes>
-      </BrowserRouter>
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }

@@ -1,9 +1,24 @@
 import { Link } from "react-router-dom";
+import ReactPaginate from "react-paginate";
+import { useState } from "react";
 
 function DisplayCountry({ countries, showName }) {
+
+const PER_PAGE = 12;
+const [currentPage, setCurrentPage] = useState(0);
+
+function handlePageClick ({selected : selectedPage}){
+  console.log('selectedPage', selectedPage);
+  setCurrentPage(selectedPage);
+}
+
+const offset = currentPage * PER_PAGE;
+
+const pageCount = Math.ceil(countries.length / PER_PAGE);
+
   return (
     <div className="md:flex flex-wrap md:justify-center">
-      {countries.map((country) => (
+      {countries.slice(offset, (offset + PER_PAGE)).map((country) => (
         <div
           className="flex flex-col justify-between items-center md:w-1/4 "
           key={country.flags.svg}
@@ -36,6 +51,18 @@ function DisplayCountry({ countries, showName }) {
           </div>
         </div>
       ))}
+
+      <ReactPaginate 
+      previousLabel = {"<- prev"}
+      nextLabel ={"next ->"}
+      pageCount = {pageCount}
+      onPageChange = {handlePageClick}
+      containerClassName = {"pagination"}
+      previousLinkClassName = {"pagination_link"}
+      nextLinkClassName = {"pagination_link"}
+      disabledClassName = {"pagination_link--disabled"}
+      activeClassName = {"pagination_link--active"}
+      />
     </div>
   );
 }

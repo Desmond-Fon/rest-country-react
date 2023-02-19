@@ -1,17 +1,32 @@
 import { Link } from "react-router-dom";
+import ReactPaginate from "react-paginate";
+import { useState } from "react";
 
-function DisplayRegions({ changeRegion, showName }) {
+function DisplayRegion({ changeRegion, showName }) {
+
+const PER_PAGE = 12;
+const [currentPage, setCurrentPage] = useState(0);
+
+function handlePageClick ({selected : selectedPage}){
+  console.log('selectedPage', selectedPage);
+  setCurrentPage(selectedPage);
+}
+
+const offset = currentPage * PER_PAGE;
+
+const pageCount = Math.ceil(changeRegion.length / PER_PAGE);
+
   return (
-    <div className="md:flex flex-wrap md:justify-between">
-      {changeRegion.map((names) => (
+    <div className="md:flex flex-wrap md:justify-center">
+      {changeRegion.slice(offset, (offset + PER_PAGE)).map((country) => (
         <div
-          className="flex flex-col justify-center items-center md:w-1/4 "
-          key={names.flags.svg}
+          className="flex flex-col justify-between items-center md:w-1/4 "
+          key={country.flags.svg}
         >
-          <div className="w-4/5 bg-whiteLMDM mb-9 rounded-[5px] shadow-md text-left dark:text-whiteLMDM dark:bg-darkBlue">
+          <div className="w-4/5 bg-whiteLMDM mb-9 rounded-[5px] shadow-md text-left dark:text-whiteLMDM dark:bg-darkBlue hello">
             <div className="w-full md-w-[500px]">
               <img
-                src={names.flags.svg}
+                src={country.flags.svg}
                 alt=""
                 className="rounded-t-[5px] w-full h-full md:h-[120px] md:object-cover"
               />
@@ -19,25 +34,37 @@ function DisplayRegions({ changeRegion, showName }) {
             <div className="pb-10 pt-7 text-left h-3/5 ml-5">
               <Link to="/Details">
                 <h2 className="text-lg font-bold pb-4 md:text-sm" onClick={showName}>
-                  {names.name.common}
+                  {country.name.common}
                 </h2>
               </Link>
               <p className="font-semibold md:text-xs">
                 Population:{" "}
-                <span className="font-light">{names.population}</span>
+                <span className="font-light">{country.population}</span>
               </p>
               <p className="font-semibold md:text-xs">
-                Region: <span className="font-light">{names.region}</span>
+                Region: <span className="font-light">{country.region}</span>
               </p>
               <p className="font-semibold md:text-xs">
-                Capital: <span className="font-light">{names.capital}</span>
+                Capital: <span className="font-light">{country.capital}</span>
               </p>
             </div>
           </div>
         </div>
       ))}
+
+      <ReactPaginate 
+      previousLabel = {"<- prev"}
+      nextLabel ={"next ->"}
+      pageCount = {pageCount}
+      onPageChange = {handlePageClick}
+      containerClassName = {"pagination"}
+      previousLinkClassName = {"pagination_link"}
+      nextLinkClassName = {"pagination_link"}
+      disabledClassName = {"pagination_link--disabled"}
+      activeClassName = {"pagination_link--active"}
+      />
     </div>
   );
 }
 
-export default DisplayRegions;
+export default DisplayRegion;
