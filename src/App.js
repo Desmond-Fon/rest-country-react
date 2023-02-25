@@ -11,8 +11,10 @@ function App() {
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
+      setMode("Light Mode")
     } else {
       document.documentElement.classList.remove("dark");
+      setMode("Dark Mode")
     }
   }, [theme]);
 
@@ -20,6 +22,7 @@ function App() {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
+  const [mode, setMode] = useState("Dark Mode")
   const [countries, setCountry] = useState([]);
   const [searchCountry, setSearchCountry] = useState([]);
   const [name, setName] = useState("");
@@ -97,13 +100,15 @@ function App() {
   }, [details]);
 
   const showName = (e) => {
-    const el = e.target.innerHTML;
+    let el = e.currentTarget.dataset.testId;
     setDetails(el);
+    console.log(e.currentTarget.dataset);
+    console.log(el);
   };
 
   return (
     <div className="font-nunito h-screen bg-veryLightGrayLM dark:bg-veryDarkBlueDM">
-      <Header onSwitch={handleThemeSwitch} />
+      <Header onSwitch={handleThemeSwitch} mode={mode}/>
       <BrowserRouter>
         <Routes>
           <Route

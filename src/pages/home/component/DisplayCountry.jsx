@@ -22,8 +22,11 @@ const pageCount = Math.ceil(countries.length / PER_PAGE);
         <div
           className="flex flex-col justify-between items-center md:w-1/4 "
           key={country.flags.svg}
+          data-test-id={country.name.common || country.name.official}
+          onClick={showName}
         >
           <div className="w-4/5 bg-whiteLMDM mb-9 rounded-[5px] shadow-md text-left dark:text-whiteLMDM dark:bg-darkBlue hello">
+              <Link to="/Details">
             <div className="w-full md-w-[500px]">
               <img
                 src={country.flags.svg}
@@ -32,11 +35,9 @@ const pageCount = Math.ceil(countries.length / PER_PAGE);
               />
             </div>
             <div className="pb-10 pt-7 text-left h-3/5 ml-5">
-              <Link to="/Details">
-                <h2 className="text-lg font-bold pb-4 md:text-sm" onClick={showName}>
+                <h2 className="text-lg font-bold pb-4 md:text-sm">
                   {country.name.common}
                 </h2>
-              </Link>
               <p className="font-semibold md:text-xs">
                 Population:{" "}
                 <span className="font-light">{country.population}</span>
@@ -48,6 +49,7 @@ const pageCount = Math.ceil(countries.length / PER_PAGE);
                 Capital: <span className="font-light">{country.capital}</span>
               </p>
             </div>
+              </Link>
           </div>
         </div>
       ))}
